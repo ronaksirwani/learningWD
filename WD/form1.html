@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Appointment form</title>
+	<style>
+		header{
+			text-align: center;
+			margin-bottom: 50px;
+			font-size: 30px;
+			color: rgb(220,2,200);
+			font-style: italic;
+		}
+
+		section{
+			border-radius: 30px;
+ 	 		background-color: #f2f2f2;
+  			padding: 15px;
+		}
+
+		.app_form form label{
+			margin: 60px;
+			color: rgba(100,100,250,1.0);
+			font-size: 20px;
+			font-style: italic;
+
+		}
+
+		.app_form form input , select{
+			margin: 10px 20px;
+			width: 300px;
+			height: 25px;
+			border: 2px solid #ccc;
+  			border-radius: 5px;
+		}
+
+		.app_form form input[id="appdate"],select{
+			cursor: pointer;
+		}
+
+		.app_form form input:focus , select:focus{
+			background-color: rgba(250,200,0,0.3);
+		}
+
+		.app_form form input[type="submit"]{
+			background-color: rgba(0,200,0,0.5);
+			color: white;
+			margin: 20px 500px;
+			width: 100px;
+			height: 30px;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+
+		.app_form form input[type="submit"]:hover {
+			background-color: rgba(0,200,0,0.7);
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<header>Appointment Form</header>
+
+	<section class="app_form">
+		<form>
+			<label for="FullName">Full Name: </label> 
+			<input type="text" id="pname" name="pname" placeholder="Your Full Name">
+			<br>
+
+			<label for="pcnumber">Contact number: </label>
+			<input type="text" id="pcnumber" name="pcnumber" placeholder="eg. 9876789123">
+			<br>
+
+			<label for="appdate">Select Appointment Date:</label>
+			<input type="date" id="appdate" name="appdate" placeholder="mm/dd/yyyy">
+			<br>
+
+			<label for="dname">Select Doctor:</label>
+			<select name="dname" id="dname"> 
+				<option value="Select Doctor">Select Doctor</option>
+				<option value="Dr.AAA">Dr.AAA</option>
+				<option value="Dr.AAA">Dr.BBB</option>
+				<option value="Dr.AAA">Dr.CCC</option>
+			</select>
+			<br>
+
+			<label for="tslot">Select Time Slot :</label>
+			<select name="tslot" id="tslot"> 
+				<option value="0">Select Slot</option>
+				<option value="1">10:00 AM - 11:00 AM </option>
+				<option value="2">11:00 AM - 12:00 PM </option>
+				<option value="3">1:00 PM - 2:00 PM </option>
+			</select>
+			<br>
+
+			<input type="submit" value="submit">
+			<br>
+
+		</form>
+		
+	</section>
+</body>
+</html> 
