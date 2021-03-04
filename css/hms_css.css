@@ -1,0 +1,122 @@
+body{
+	font-size: 16px;
+	font-family: 'Oxygen', sans-serif;
+	
+}
+
+#header-nav{
+	border: 0;
+	border-radius: 0;
+	background-color: #eaeae1;
+}
+
+#logo{
+	background: url(hms_logo.png) no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 10px 15px 10px 0px; 
+}
+.navbar-brand{
+	padding-top: 25px;
+}
+.navbar-brand h1{
+	font-family: 'lora',serif;
+	color: blue;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 0.75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle{
+	margin-top: -20px;
+	clear: both;
+}
+#nav-list{
+	margin-top: 10px;
+}
+#nav-list a{
+	color: #951C49;
+	text-align: center;
+}
+#nav-list a:hover,#nav-list a:focus{
+	background:#9999ff;
+}
+#nav-list a span{
+	font-size: 1.5em;
+}
+
+.container a button{
+	width: 30%;
+	height: 60px;
+	box-sizing: content-box;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 1.4em;
+}
+.row{
+	padding: 10px;
+}
+#season,#map,#notice{
+	height: 200px;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #3f0c1f;
+	overflow: hidden;
+}
+.book:hover,#season:hover,#map:hover,#notice:hover{
+	box-shadow: 0 1px 5px 5px #9999ff;
+}
+
+
+@media (min-width: 1200px){
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+	
+}
+
+@media (max-width: 767px){
+	.navbar-brand h1 { 
+    padding-top: 10px;
+    font-size: 5vw;
+    margin-top: 0px; 
+	}
+
+	.navbar-header button.navbar-toggle{
+	margin-top: 20px;
+	float: right;
+	clear: both;
+	}
+	.navbar-header button.navbar-toggle:hover,.navbar-header button.navbar-toggle:focus{
+		background: #9999ff;
+	}
+
+	#call-btn > a {
+	font-size: 3vw;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #eaeae1;
+    color: #951C49;
+    }
+    #call-btn > a:hover,#call-btn > a:focus{
+    	background: #9999ff;
+    }
